@@ -4,7 +4,7 @@ import PortfolioItem from "../components/PortfolioItem";
 import Modal from "@mui/material/Modal"; // Using Material UI for modal
 import portfolioData from "../components/data/portfolioData";
 import { useAnimateUnderline } from "../components/hook/ useAnimateUnderline";
-import Card from "../components/Card";
+import PortfolioModal from "../components/PortfolioModal";
 
 const categories = ["All", "Fullstack", "Backend", "Frontend"];
 
@@ -86,23 +86,13 @@ function Portfolio() {
       </motion.div>
 
       {/* Modal to display more details about the portfolio item */}
-      <Modal
+      <PortfolioModal
         open={!!selectedItem}
         onClose={() => setSelectedItem(null)}
-        aria-labelledby="portfolio-modal-title"
-      >
-        <div>
-          {selectedItem && (
-            <>
-              <Card />
-              {/* <div className="modal-content">
-                <h2 id="portfolio-modal-title">{selectedItem.title}</h2>
-                <p>{selectedItem.description}</p>
-              </div> */}
-            </>
-          )}
-        </div>
-      </Modal>
+        selectedItem={selectedItem}
+        portfolioData={portfolioData}
+        setSelectedItem={setSelectedItem}
+      />
     </div>
   );
 }

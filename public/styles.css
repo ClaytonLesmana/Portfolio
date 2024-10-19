@@ -172,7 +172,8 @@ header {
 }
 
 .social-icons a:hover {
-  background-color: #34D399; /* Orange hover effect */
+  background-color: #34D399; 
+  color:#0F172A;
 }
 
 .download-button {
@@ -752,12 +753,159 @@ form textarea::placeholder {
 
 /* Modal */
 
-.modal-content{
-  display: flex;
-  width: 1000px;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  background-color: #0F172A;
+.modal-content {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  max-height: 90vh;
+  display: grid;
+  grid-template-rows: auto 1fr; /* First row for header, second row for content */
+  gap: 20px;
+  overflow-y: scroll;
 }
+
+.modal-header {
+  display: flex;
+  justify-content: center; /* Center the title in the header */
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  flex-grow: 1; /* Allows the title to take up remaining space */
+  text-align: center; /* Center the title */
+}
+
+.close-button {
+  position: absolute;
+  right: 20px; /* Position the close button at the far right */
+  top: 0; /* Align it vertically at the top */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.modal-main-content {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Left arrow, content, right arrow */
+  gap: 20px;
+  align-items: start;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute; /* Make the arrows absolute to the modal */
+  top: 50%; /* Center the arrows vertically */
+  transform: translateY(-50%); /* Adjust for proper centering */
+  z-index: 2; /* Make sure arrows are above content */
+}
+
+.arrow-button.left {
+  left: 200px; /* Adjust this value to place the left arrow outside the modal content */
+}
+
+.arrow-button.right {
+  right: 200px; /* Adjust this value to place the right arrow outside the modal content */
+}
+
+
+.media-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  margin-right: 60px;
+}
+
+.modal-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.project-video {
+  border-radius: 10px;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  /* background-color: #1E293B; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding: 25px; */
+  border-radius: 10px;
+  align-self: flex-start; /* Align the details section to start at the top */
+
+}
+
+.modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.animated-underline-modal-info {
+  width: 110px;
+  height: 4px;
+  background-color: #34d399;
+  margin-top: 10px; /* Space between heading and underline */
+  margin-bottom: 20px; /* Space after the underline */
+}
+
+.animated-underline-modal-detail {
+  width: 140px;
+  height: 4px;
+  background-color: #34d399;
+  margin-top: 10px; /* Space between heading and underline */
+  margin-bottom: 20px; /* Space after the underline */
+}
+
+.modal-description,
+.modal-details {
+  margin-bottom: 20px;
+}
+
+.modal-share {
+  margin-top: 20px;
+}
+
+.tech-details{
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  background-color: #2d2d2d;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.project-details{
+  margin-bottom: 10px;
+}
+
+/* Carousels */
 

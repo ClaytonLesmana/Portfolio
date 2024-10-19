@@ -5,7 +5,7 @@ import About from "../pages/about";
 import Resume from "../pages/resume";
 import Portfolio from "../pages/portfolio";
 import Contact from "../pages/contact";
-import Card from "../components/Card";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
