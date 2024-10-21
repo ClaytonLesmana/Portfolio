@@ -179,16 +179,18 @@ header {
 .download-button {
   background-color: #34D399;
   color:#0F172A;
-  padding: 10px 30px; /* Wider padding for the button */
+  padding: 10px 30px; 
+  text-align: center;
   border: 2px solid transparent;
   width: 15%;
-  border-radius: 10px; /* Rounded button */
+  border-radius: 10px; 
   cursor: pointer;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   position: absolute;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  margin-top: 30px; /* Add margin to separate it from other content */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 30px; 
 }
 
 .download-button:hover {
@@ -377,6 +379,7 @@ header {
   font-size: 1rem;
 }
 
+/* Resume */
 
 .resume-section {
   padding: 60px 20px;
@@ -421,39 +424,81 @@ hr.animated-underline {
 .resume-content {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 0px; /* Reduce the gap between education and experience */
   margin-bottom: 50px;
 }
 
 .resume-column {
   width: 45%;
-  background-color: #1E293B;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .resume-column h3 {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #34D399;
+  color: #F3F4F6;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .resume-item {
-  margin-bottom: 20px;
-  padding-left: 25px;
+  display: flex;
+  align-items: center; /* Align title with the icon */
+  background-color: #1A202C;
+  border-left:1px solid #34D399; /* Highlight the left border in green */
+  border-top: 1px solid #2d3748; /* Lighter shade for top and bottom */
+  border-bottom: 1px solid #2d3748; /* Lighter shade for bottom border */
+  padding: 20px 20px 20px 40px;
+  /* margin-bottom: 20px; */
   position: relative;
+  text-align: left;
 }
 
-.resume-item .resume-icon {
-  width: 10px;
-  height: 10px;
-  background-color: #34D399;
-  position: absolute;
-  top: 10px;
-  left: 0;
+.resume-item:hover  {
+  border-top: 1px solid #34D399;
+  border-bottom: 1px solid #34D399; 
+  border-right: 1px solid #34D399; 
 }
+
+.resume-icon {
+  position: absolute;
+  left: -6px;
+  top: 20px; /* Align the icon vertically */
+  width: 30px;
+  height: 30px;
+  color: #34D399;
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-text {
+  margin-left: 40px; /* To create space between the icon and text */
+}
+
+.resume-text p{
+  margin-bottom: 5px;
+}
+
+.resume-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #34D399;
+  color: #1A202C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #1A202C;
+  color: #34D399;
+}
+
+
+
 
 .resume-item h4 {
   font-size: 1.5rem;
@@ -466,42 +511,144 @@ hr.animated-underline {
   color: #D1D5DB;
 }
 
+/* Skills */
+
 .skills-section {
   margin-top: 40px;
 }
 
 .skills-section h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #34D399;
-  margin-bottom: 20px;
+  color: #F3F4F6;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.skills-column {
+  width: 48%; /* Adjust width for both columns */
+  
 }
 
 .skills-bar {
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* To position the percentage text relative to the bar */
 }
 
 .skills-bar label {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-  color: #F3F4F6;
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #f3f4f6;
+  text-align: left;
 }
 
 .bar {
-  background-color: #1E293B;
+  background-color: #1e293b;
   height: 8px;
   border-radius: 4px;
-  position: relative;
-  overflow: hidden;
+  width: 80%; /* Ensure it's responsive */
+  position: relative; /* To ensure the bar is the anchor for the percentage */
 }
 
 .bar span {
   display: block;
   height: 100%;
-  background-color: #34D399;
+  background-color: #34d399;
+  border-radius: 4px;
 }
+
+.skill-percentage {
+  color: #f3f4f6;
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0F172A;
+}
+
+
+
+/* Certificate */
+.certificates-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  gap: 50px; /* Adjust the gap between items */
+  width: 100%; /* Ensures full-width usage */
+}
+
+.certifications-title{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #F3F4F6;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+
+.certificate-item {
+  display: flex;
+  align-items: center;
+  background-color: #1A202C;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-logo {
+  flex: 1;
+  /* margin-right: 20px; */
+  justify-content: flex-start;
+  left: 0;
+}
+
+.certificate-logo img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  margin-left: -80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.certificate-details {
+  flex: 2;
+  text-align: left;
+}
+
+.certificate-details h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.certificate-details p {
+  color: #D1D5DB;
+  margin-bottom: 10px;
+}
+
+
 
 /* Contact */
 
