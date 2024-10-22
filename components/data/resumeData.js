@@ -34,35 +34,35 @@ const resumeData = {
           title: 'Prepare Data for Exploration',
           issuedBy: 'Google',
           date: 'October 2021',
-          logo: "../assets/profile.jpg",
+          logo: "../assets/google.png",
           URL:"https://www.coursera.org/account/accomplishments/verify/U6YB66X7UBYF"
         },
         {
           title: 'Ask Questions to Make Data-Driven Decisions',
           issuedBy: 'Google',
           date: 'September 2021',
-          logo: "../assets/profile.jpg",
+          logo: "../assets/google.png",
           URL:"https://www.coursera.org/account/accomplishments/verify/DQEN94RWXJJG"
         },
         {
           title: 'Foundation: Data, Data Everywhere',
           issuedBy: 'Google',
           date: 'September 2021',
-          logo: "../assets/profile.jpg",
+          logo: "../assets/google.png",
           URL:"https://www.coursera.org/account/accomplishments/verify/FMDQVLU27529"
         },
         {
           title: 'The Complete 2024 Web Development Bootcamp',
           issuedBy: 'Dr. Angela Yu',
           date: 'October 2024',
-          logo: "../assets/profile.jpg",
+          logo: "../assets/Coursera-Logo.png",
           URL: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-594351ca-0288-45a4-aa00-18b439e97104.pdf"
         },
         {
           title: 'Data Science and Machine Learning',
           issuedBy: 'Purwadhika',
           date: 'October 2024',
-          logo: "../assets/purwadhika.jpg",
+          logo: "../assets/purwadhika.png",
           URL: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-594351ca-0288-45a4-aa00-18b439e97104.pdf"
         },
         
