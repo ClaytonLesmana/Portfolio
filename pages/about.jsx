@@ -13,18 +13,14 @@ function About() {
         {/* Title */}
         <div className="about-title">
           <h2>Get to know me</h2>
-          {/* <h1>About Me</h1> */}
+          <h1>About Me</h1>
           <hr className="animated-underline" ref={underlineRef} />
         </div>
 
         <div className="about-content">
           {/* Left Side: Image */}
           <div className="about-image">
-            <img
-              src="../Portfolio/assets/profile.jpg"
-              alt="Profile"
-              className="profile-img"
-            />
+            <img src="../profile.jpg" alt="Profile" className="profile-img" />
           </div>
 
           {/* Right Side: Info */}
