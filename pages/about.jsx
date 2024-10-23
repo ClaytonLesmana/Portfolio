@@ -13,7 +13,7 @@ function About() {
         {/* Title */}
         <div className="about-title">
           <h2>Get to know me</h2>
-          <h1>About Me</h1>
+          {/* <h1>About Me</h1> */}
           <hr className="animated-underline" ref={underlineRef} />
         </div>
 
@@ -21,7 +21,7 @@ function About() {
           {/* Left Side: Image */}
           <div className="about-image">
             <img
-              src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
+              src="../Portfolio/assets/profile.jpg"
               alt="Profile"
               className="profile-img"
             />
