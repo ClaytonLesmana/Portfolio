@@ -1,3 +1,9 @@
+import utsTranscript from '/assets/UTS Academic Transcript.pdf'
+import diplomaTranscript from '/assets/Diploma Academic Transcript.pdf'
+import googleLogo from '/assets/google.png'
+import courseraLogo from '/assets/Coursera-Logo.png'
+import purwadhikaLogo from '/assets/purwadhika.png'
+
 const resumeData = {
     education: [
       {
@@ -5,14 +11,14 @@ const resumeData = {
         institution: "University of Technology Sydney",
         date: "2022 - 2024",
         description: "GPA : 6.41 / 7.0",
-        transcript: "../public/assets/UTS Academic Transcript.pdf"
+        transcript: utsTranscript
       },
       {
         title: "Diploma of Engineering",
         institution: "University of Technology Sydney",
         date: "2021 - 2022",
         description: "GPA : 6.9 / 7.0",
-        transcript: "../public/assets/Diploma Academic Transcript.pdf"
+        transcript: diplomaTranscript
       },
     ],
     experience: [
@@ -34,35 +40,35 @@ const resumeData = {
           title: 'Prepare Data for Exploration',
           issuedBy: 'Google',
           date: 'October 2021',
-          logo: "../assets/google.png",
+          logo: googleLogo,
           URL:"https://www.coursera.org/account/accomplishments/verify/U6YB66X7UBYF"
         },
         {
           title: 'Ask Questions to Make Data-Driven Decisions',
           issuedBy: 'Google',
           date: 'September 2021',
-          logo: "../assets/google.png",
+          logo: googleLogo,
           URL:"https://www.coursera.org/account/accomplishments/verify/DQEN94RWXJJG"
         },
         {
           title: 'Foundation: Data, Data Everywhere',
           issuedBy: 'Google',
           date: 'September 2021',
-          logo: "../assets/google.png",
+          logo: googleLogo,
           URL:"https://www.coursera.org/account/accomplishments/verify/FMDQVLU27529"
         },
         {
           title: 'The Complete 2024 Web Development Bootcamp',
           issuedBy: 'Dr. Angela Yu',
           date: 'October 2024',
-          logo: "../assets/Coursera-Logo.png",
+          logo: courseraLogo,
           URL: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-594351ca-0288-45a4-aa00-18b439e97104.pdf"
         },
         {
           title: 'Data Science and Machine Learning',
           issuedBy: 'Purwadhika',
           date: 'October 2024',
-          logo: "../assets/purwadhika.png",
+          logo: purwadhikaLogo,
           URL: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-594351ca-0288-45a4-aa00-18b439e97104.pdf"
         },
         
