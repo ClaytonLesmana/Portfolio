@@ -21,7 +21,7 @@ function About() {
           {/* Left Side: Image */}
           <div className="about-image">
             <img
-              src="./../public/assets/profile.jpg"
+              src="../public/assets/profile.jpg"
               alt="Profile"
               className="profile-img"
             />
