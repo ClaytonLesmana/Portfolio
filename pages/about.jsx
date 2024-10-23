@@ -20,7 +20,11 @@ function About() {
         <div className="about-content">
           {/* Left Side: Image */}
           <div className="about-image">
-            <img src="../profile.jpg" alt="Profile" className="profile-img" />
+            <img
+              src="./../public/assets/profile.jpg"
+              alt="Profile"
+              className="profile-img"
+            />
           </div>
 
           {/* Right Side: Info */}
