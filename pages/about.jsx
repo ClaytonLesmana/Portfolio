@@ -21,7 +21,7 @@ function About() {
           {/* Left Side: Image */}
           <div className="about-image">
             <img
-              src={`${import.meta.env.BASE_URL}/public/assets/profile.jpg`}
+              src={`${import.meta.env.BASE_URL}/public/assets/profile.JPG`}
               alt="Profile"
               className="profile-img"
             />
