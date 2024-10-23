@@ -5,14 +5,14 @@ const resumeData = {
         institution: "University of Technology Sydney",
         date: "2022 - 2024",
         description: "GPA : 6.41 / 7.0",
-        transcript: "../assets/UTS Academic Transcript.pdf"
+        transcript: "../public/assets/UTS Academic Transcript.pdf"
       },
       {
         title: "Diploma of Engineering",
         institution: "University of Technology Sydney",
         date: "2021 - 2022",
         description: "GPA : 6.9 / 7.0",
-        transcript: "../assets/Diploma Academic Transcript.pdf"
+        transcript: "../public/assets/Diploma Academic Transcript.pdf"
       },
     ],
     experience: [
