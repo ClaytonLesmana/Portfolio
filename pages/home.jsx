@@ -50,7 +50,7 @@ function Home() {
             <GitHubIcon />
           </a>
           <a
-            href="https://www.linkedin.com/in/clayton-lesmana-40b56524b/"
+            href="https://www.linkedin.com/in/clayton-lesmana-40b56524b"
             target="_blank"
             rel="noopener noreferrer"
           >
