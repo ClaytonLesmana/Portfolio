@@ -35,16 +35,32 @@ function Home() {
         </h1>
 
         <div className="social-icons">
-          <a href="https://www.instagram.com/clayton_lesmana/profilecard/?igsh=MTU3NnR5aHA4cWVlMg==">
+          <a
+            href="https://www.instagram.com/clayton_lesmana/profilecard/?igsh=MTU3NnR5aHA4cWVlMg=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <InstagramIcon />
           </a>
-          <a href="https://github.com/ClaytonLesmana">
+          <a
+            href="https://github.com/ClaytonLesmana"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GitHubIcon />
           </a>
-          <a href="www.linkedin.com/in/clayton-lesmana-40b56524b">
+          <a
+            href="https://www.linkedin.com/in/clayton-lesmana-40b56524b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedInIcon />
           </a>
-          <a href="https://www.facebook.com/clayton.lesmana.1">
+          <a
+            href="https://www.facebook.com/clayton.lesmana.1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FacebookIcon />
           </a>
         </div>
