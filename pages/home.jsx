@@ -35,16 +35,16 @@ function Home() {
         </h1>
 
         <div className="social-icons">
-          <a href="#">
+          <a href="https://www.instagram.com/clayton_lesmana/profilecard/?igsh=MTU3NnR5aHA4cWVlMg==">
             <InstagramIcon />
           </a>
-          <a href="#">
+          <a href="https://github.com/ClaytonLesmana">
             <GitHubIcon />
           </a>
-          <a href="#">
+          <a href="www.linkedin.com/in/clayton-lesmana-40b56524b">
             <LinkedInIcon />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/clayton.lesmana.1">
             <FacebookIcon />
           </a>
         </div>
