@@ -1,6 +1,6 @@
 import React from "react";
 import { useAnimateUnderline } from "../components/hook/ useAnimateUnderline";
-import profileImage from "/assets/profile.JPG";
+// import profileImage from "dist/assets/profile.png";
 
 function About() {
   const underlineRef = useAnimateUnderline();
@@ -21,7 +21,11 @@ function About() {
         <div className="about-content">
           {/* Left Side: Image */}
           <div className="about-image">
-            <img src={profileImage} alt="Profile" className="profile-img" />
+            <img
+              src={`${import.meta.env.BASE_URL}assets/profile.jpg`}
+              alt="Profile"
+              className="profile-img"
+            />
           </div>
 
           {/* Right Side: Info */}

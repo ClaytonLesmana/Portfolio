@@ -1,4 +1,4 @@
-import profileImage from "/assets/profile.JPG";
+// import profileImage from "/assets/profile.JPG";
 
 
 const portfolioData = [
