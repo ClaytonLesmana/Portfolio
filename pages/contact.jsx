@@ -7,6 +7,28 @@ import { useAnimateUnderline } from "../components/hook/ useAnimateUnderline";
 
 function contact() {
   const underlineRef = useAnimateUnderline();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "a433072f-74c6-4f49-82f7-795a8ea3d879");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
 
   return (
     <div className="contact-section">
@@ -17,21 +39,23 @@ function contact() {
       </div>
 
       <div className="contact-content">
-        {/* Left - Message Form */}
-        <div className="message-form">
-          <h3>Message Me</h3>
-          <form>
-            <div className="input-group">
-              <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email" />
-            </div>
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Message"></textarea>
-            <button type="submit" className="send-button">
-              Send Message
-            </button>
-          </form>
-        </div>
+        <form onSubmit={onSubmit}>
+          {/* Left - Message Form */}
+          <div className="message-form">
+            <h3>Message Me</h3>
+            <form>
+              <div className="input-group">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+              </div>
+              <input type="text" placeholder="Subject" />
+              <textarea placeholder="Message"></textarea>
+              <button type="submit" className="send-button">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </form>
 
         {/* Right - Contact Info */}
         <div className="contact-info">
