@@ -64,13 +64,6 @@ function Home() {
             <FacebookIcon />
           </a>
         </div>
-        {/* <button
-          href="../public/Clayton_Software_Engineer.pdf"
-          download
-          className="download-button"
-        >
-          Download CV
-        </button> */}
         <a
           href="../public/Clayton_Software_Engineer.pdf"
           download

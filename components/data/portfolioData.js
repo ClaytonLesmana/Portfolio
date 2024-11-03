@@ -1,4 +1,4 @@
-// import profileImage from "/assets/profile.JPG";
+import profileImage from "/assets/profile.JPG?url";
 
 
 const portfolioData = [
@@ -6,7 +6,7 @@ const portfolioData = [
       id: 1,
       title: "Fullstack",
       category: "Fullstack",
-      // image: profileImage,
+      image: profileImage,
       description: "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
       technologies: ["HTML", "CSS", "JavaScript","react","bootstrap","node.js"],
       URL:"www.google.com",

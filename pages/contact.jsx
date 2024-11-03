@@ -16,6 +16,7 @@ function Contact() {
     formData.append("access_key", "a433072f-74c6-4f49-82f7-795a8ea3d879");
 
     const object = Object.fromEntries(formData);
+    console.log(object);
     const json = JSON.stringify(object);
 
     const res = await fetch("https://api.web3forms.com/submit", {
@@ -30,6 +31,7 @@ function Contact() {
     if (res.success) {
       console.log("Success", res);
       setShowThankYou(true);
+      event.target.reset(); //reset contact form
       setTimeout(() => {
         setShowThankYou(false);
       }, 4000); // Hide message after 4 seconds
@@ -45,10 +47,23 @@ function Contact() {
       </div>
 
       <div className="contact-content">
-        <form onSubmit={onSubmit}>
-          {/* Left - Message Form */}
-          <div className="message-form">
-            <h3>Message Me</h3>
+        {/* Left - Message Form */}
+        <div className="message-form">
+          <h3>Message Me</h3>
+          {showThankYou && (
+            <div className="thank-you-overlay">
+              <div className="thank-you-message">
+                <h2>Form submitted successfully!</h2>
+                <p>
+                  Thank you! The form has been submitted successfully.
+                  <br />
+                  We will reply to you soon!
+                </p>
+                <a href="#">Go back</a>
+              </div>
+            </div>
+          )}
+          <form onSubmit={onSubmit}>
             <div className="input-group">
               <input type="text" placeholder="Name" name="name" required />
               <input type="email" placeholder="Email" name="email" required />
@@ -58,13 +73,13 @@ function Contact() {
             <button type="submit" className="send-button">
               Send Message
             </button>
-            {showThankYou && (
-              <div className="thank-you-message">
-                Thank you for your message! I will get back to you soon.
-              </div>
-            )}
-          </div>
-        </form>
+            {/* {showThankYou && (
+            <div className="thank-you-message">
+              Thank you for your message! I will get back to you soon.
+            </div>
+            )} */}
+          </form>
+        </div>
 
         {/* Right - Contact Info */}
         <div className="contact-info">
