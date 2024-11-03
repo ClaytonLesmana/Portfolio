@@ -817,6 +817,15 @@ form textarea::placeholder {
   font-size: 0.8rem;
 }
 
+.thank-you-message {
+  margin-top: 20px;
+  background-color: #34d399;
+  color: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
 
 
 /* Portfolio */
