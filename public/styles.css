@@ -677,18 +677,19 @@ hr.animated-underline {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 30px;
 }
 
 /* Updated Contact Form Style */
 .message-form {
-  width: 55%; /* Adjust the width for better alignment */
+  width: 100%; 
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
+  justify-content: between;
 }
 
 .message-form h3 {
@@ -703,12 +704,12 @@ form input, form textarea {
   width: 100%;
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #0F172A; /* Match the background */
+  background-color: #0F172A;
   border: none;
-  border-bottom: 2px solid #1E293B; /* Default bottom border */
+  border-bottom: 2px solid #1E293B;
   color: #F3F4F6;
-  transition: border-bottom-color 0.3s ease; /* Smooth transition */
-  outline: none; /* Remove default outline */
+  transition: border-bottom-color 0.3s ease;
+  outline: none; 
 }
 
 form textarea{
@@ -826,6 +827,18 @@ form textarea::placeholder {
   font-weight: bold;
   text-align: center;
 }
+
+/* Remove autofill background color */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #0F172A inset !important;
+  -webkit-text-fill-color: #F3F4F6 !important;
+}
+
+/* Optionally, adjust border color as well */
+input:-webkit-autofill {
+  border-bottom: 2px solid #34D399 !important;
+}
+
 
 
 /* Portfolio */

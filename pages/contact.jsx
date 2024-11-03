@@ -30,6 +30,7 @@ function Contact() {
     if (res.success) {
       console.log("Success", res);
       setShowThankYou(true);
+      event.target.reset();
       setTimeout(() => {
         setShowThankYou(false);
       }, 4000); // Hide message after 4 seconds
@@ -45,9 +46,10 @@ function Contact() {
       </div>
 
       <div className="contact-content">
-        <form onSubmit={onSubmit}>
-          {/* Left - Message Form */}
-          <div className="message-form">
+        <div className="message-form">
+          <form onSubmit={onSubmit}>
+            {/* Left - Message Form */}
+
             <h3>Message Me</h3>
             <div className="input-group">
               <input type="text" placeholder="Name" name="name" required />
@@ -63,8 +65,8 @@ function Contact() {
                 Thank you for your message! I will get back to you soon.
               </div>
             )}
-          </div>
-        </form>
+          </form>
+        </div>
 
         {/* Right - Contact Info */}
         <div className="contact-info">
