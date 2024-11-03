@@ -75,15 +75,12 @@ const resumeData = {
         
     ],
     skills: [
-      { name: "HTML/CSS", level: 90 },
-      { name: "React JS", level: 80 },
-      { name: "C++", level: 70 },
-      { name: "Python", level: 75 },
-      { name: "SQL", level: 90 },
-      { name: "Node JS", level: 70 },
-      { name: "Web Design", level: 70 },
-      { name: "Express JS", level: 75 },
-      { name: "JavaScript", level: 85 },
+      { name: "HTML/CSS", level: 95 },
+      { name: "React JS", level: 90 },
+      { name: "Web Design", level: 80 },
+      { name: "Express.js", level: 95 },
+      { name: "JavaScript", level: 90 },
+      { name: "TypeScript", level: 80 },
     ],
   };
   
